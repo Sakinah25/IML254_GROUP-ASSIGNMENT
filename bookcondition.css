@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --purple: #A44CD3;
+    --dark-color: #8800C7;
+    --black: #444;
+    --light-color: #666;
+    --border: .1rem solid rgba(0,0,0,.1);
+    --border-hover: .1rem solid var(--black);
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: width none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--black);
+}
+
+section{
+    padding: 5rem 9%;
+    background: #FFFED3;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    font-size: 40px;
+    color: var(--dark-color);
+    padding-bottom: 30px;
+}
+
+.heading::before{
+    position: absolute;
+    top: 50%; left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: .01rem;
+    background: rgba(0,0,0,.1);
+    z-index: -1;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    border-radius: .5rem;
+    color: #fff;
+    background: var(--purple);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background: var(--dark-color);
+}
+
+.specialty .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.specialty .box-container .box{
+    flex: 1 1 30rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+    cursor: pointer;
+    border-radius: .5rem;
+    background: white;
+}
+
+.specialty .box-container .box .content{
+    text-align: center;
+    background: #fff;
+    padding: 2rem;
+}
+
+.specialty .box-container .box .content img{
+    margin: 1.5rem 0;
+}
+
+.specialty .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: #333;
+    background: white;
+    padding-bottom: 10px;
+}
+
+.specialty .box-container .box .content p{
+    font-size: 1.6rem;
+    color: #666;
+    padding: 1rem 0;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    text-transform: lowercase;
+    background: white;
+}
+
+.specialty .box-container .box .content p strong{
+    background: white;
+}
